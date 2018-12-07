@@ -3,6 +3,7 @@ import { json, urlencoded } from 'body-parser'
 import morgan from 'morgan'
 import cors from 'cors'
 import config from './config'
+import { connect } from './utils/db'
 
 export const app = express()
 
@@ -17,8 +18,13 @@ app.get('/api/data', (req, res) => {
   res.json({ message: 'hello' })
 })
 
-export const start = () => {
-  app.listen(config.port, () => {
-    console.log(`REST API on http://localhost:${config.port}/api`)
-  })
+export const start = async () => {
+  try {
+    await connect() // connect DB
+    app.listen(config.port, () => {
+      console.log(`REST API on http://localhost:${config.port}/api`)
+    })
+  } catch (e) {
+    console.error(e)
+  }
 }
