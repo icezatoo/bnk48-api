@@ -4,6 +4,7 @@ import morgan from 'morgan'
 import cors from 'cors'
 import config from './config'
 import { connect } from './utils/db'
+import memberRouter from './resources/member/member.router'
 
 export const app = express()
 
@@ -14,9 +15,7 @@ app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
-app.get('/api/data', (req, res) => {
-  res.json({ message: 'hello' })
-})
+app.use('/api/member', memberRouter)
 
 export const start = async () => {
   try {

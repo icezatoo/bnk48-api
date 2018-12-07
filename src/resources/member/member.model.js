@@ -24,4 +24,4 @@ const memberSchema = new mongoose.Schema(
   { timestamps: true }
 )
 
-export const Member = mongoose.model('member', memberSchema)
+export const Member = mongoose.model('member', memberSchema, 'member')
