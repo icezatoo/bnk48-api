@@ -1,4 +1,4 @@
-export const getOne = model => async (req, res) => {
+export const getById = model => async (req, res) => {
   try {
     const doc = await model
       .findById({ _id: req.params.id })
@@ -13,13 +13,14 @@ export const getOne = model => async (req, res) => {
   } catch (e) {
     console.error(e)
     res.status(400).end()
+    // res.status(500).send('There was a problem finding the user.')
   }
 }
 
 export const getFindAll = model => async (req, res) => {
   try {
     const doc = await model
-      .find({})
+      .find()
       .lean()
       .exec()
 
@@ -35,6 +36,6 @@ export const getFindAll = model => async (req, res) => {
 }
 
 export const crudControllers = model => ({
-  getOne: getOne(model),
+  getById: getById(model),
   getFindAll: getFindAll(model)
 })
