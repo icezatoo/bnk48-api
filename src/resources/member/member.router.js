@@ -6,7 +6,7 @@ const router = Router()
 // /api/member
 router.route('/').get(controllers.getFindPage)
 // /api/member/all
-router.route('/all').get(controllers.getFindAll)
+router.route('/all').get(controllers.getMany)
 // /api/member/:id
 router.route('/:id').get(controllers.getById)
 

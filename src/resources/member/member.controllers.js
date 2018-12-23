@@ -32,8 +32,8 @@ export const getFindPage = model => async (req, res) => {
     })
   } catch (e) {
     console.error(e)
-    res.status(500).send('There was a problem finding the Member.')
-    // res.status(400).end()
+    // res.status(500).send('There was a problem finding the Member.')
+    res.status(400).end()
   }
 }
 
