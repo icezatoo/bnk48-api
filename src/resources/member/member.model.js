@@ -15,6 +15,8 @@ const memberSchema = new mongoose.Schema(
     province: String,
     thai_first_name: String,
     thai_last_name: String,
+    profile_image: String,
+    generation: String,
     createdBy: {
       type: mongoose.SchemaTypes.ObjectId,
       ref: 'member',

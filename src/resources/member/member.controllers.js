@@ -7,10 +7,11 @@ export const getFindPage = model => async (req, res) => {
     const { pagination } = config
     const page = parseInt(req.query.page) || pagination.page
     const limit = parseInt(req.query.limit) || pagination.limit
-    const query = req.query.q ? { nickname: req.query.q } : {}
+    const query = req.query.q || {}
 
     const doc = await model
-      .find(query)
+      .find()
+      .or([{ nickname: query }, { english_first_name: query }])
       .sort({ update_at: -1 })
       .skip((page - 1) * limit)
       .limit(limit)

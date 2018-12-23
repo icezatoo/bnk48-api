@@ -11,6 +11,8 @@
     "like": ["White color", "Tofu"],
     "nickname": "Cherprang",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/4/s/20181123093609prtvwy.png",
     "thai_first_name": "\u0e40\u0e0c\u0e2d\u0e1b\u0e23\u0e32\u0e07",
     "thai_last_name": "\u0e2d\u0e32\u0e23\u0e35\u0e22\u0e4c\u0e01\u0e38\u0e25"
   },
@@ -26,6 +28,8 @@
     "like": ["White color", "Chocolate"],
     "nickname": "Namhom",
     "province": "Sisaket",
+    "generation": "1",
+    "profile_image": "",
     "thai_first_name": "\u0e04\u0e23\u0e34\u0e2a\u0e15\u0e34\u0e19",
     "thai_last_name": "\u0e25\u0e32\u0e23\u0e4c\u0e40\u0e0b\u0e48\u0e19"
   },
@@ -41,6 +45,8 @@
     "like": ["Pink color", "Burger"],
     "nickname": "Cincin",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "",
     "thai_first_name": "\u0e44\u0e2d\u0e23\u0e14\u0e32",
     "thai_last_name": "\u0e18\u0e27\u0e31\u0e0a\u0e1c\u0e48\u0e2d\u0e07\u0e28\u0e23\u0e35"
   },
@@ -55,6 +61,8 @@
     "instagram": "tarwaan.bnk48office",
     "like": ["Yellow color", "Mom's cooking"],
     "nickname": "Tarwaan",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/5/s/20181123093550ceoswy.png",
     "province": "Nakhon Pathom",
     "thai_first_name": "\u0e2d\u0e34\u0e2a\u0e23\u0e32\u0e20\u0e32",
     "thai_last_name": "\u0e18\u0e27\u0e31\u0e0a\u0e20\u0e31\u0e01\u0e14\u0e35"
@@ -71,6 +79,8 @@
     "like": ["All Colors", "Chocolate"],
     "nickname": "Jennis",
     "province": "Petchaburi",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/2/s/20181123093652ceisz1.png",
     "thai_first_name": "\u0e40\u0e08\u0e19\u0e19\u0e34\u0e29\u0e10\u0e4c",
     "thai_last_name": "\u0e42\u0e2d\u0e48\u0e1b\u0e23\u0e30\u0e40\u0e2a\u0e23\u0e34\u0e10"
   },
@@ -85,7 +95,9 @@
     "instagram": "jan.bnk48official",
     "like": ["Light Blue color", "Spicy Food"],
     "nickname": "Jan",
+    "generation": "1",
     "province": "Sing Buri",
+    "profile_image": "",
     "thai_first_name": "\u0e40\u0e08\u0e15\u0e2a\u0e38\u0e20\u0e32",
     "thai_last_name": "\u0e40\u0e04\u0e23\u0e37\u0e2d\u0e41\u0e15\u0e07"
   },
@@ -101,6 +113,8 @@
     "like": ["Pink color", "Fried Chicken"],
     "nickname": "Pupe",
     "province": "Chiang Rai",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/7/s/20181123093500kmsx57.png",
     "thai_first_name": "\u0e08\u0e34\u0e23\u0e14\u0e32\u0e20\u0e32",
     "thai_last_name": "\u0e2d\u0e34\u0e19\u0e17\u0e08\u0e31\u0e01\u0e23"
   },
@@ -116,6 +130,8 @@
     "like": ["Light Blue color", "Chocolate"],
     "nickname": "Noey",
     "province": "Samut Prakan",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/9/s/20181123093415cdghm9.png",
     "thai_first_name": "\u0e01\u0e32\u0e19\u0e15\u0e4c\u0e18\u0e35\u0e23\u0e32",
     "thai_last_name": "\u0e27\u0e31\u0e0a\u0e23\u0e17\u0e31\u0e28\u0e19\u0e01\u0e38\u0e25"
   },
@@ -131,6 +147,8 @@
     "like": ["Violet color", "Chocolate"],
     "nickname": "Kate",
     "province": "Phayao",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/19/s/20181123093035fhtvz3.png",
     "thai_first_name": "\u0e01\u0e23\u0e20\u0e31\u0e17\u0e23\u0e4c",
     "thai_last_name": "\u0e19\u0e34\u0e25\u0e1b\u0e23\u0e30\u0e20\u0e32"
   },
@@ -146,6 +164,8 @@
     "like": ["Pink color", "Thai Dessert"],
     "nickname": "Jane",
     "province": "Pathum Thani",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/24/s/20181123092904lvyz35.png",
     "thai_first_name": "\u0e01\u0e38\u0e25\u0e08\u0e34\u0e23\u0e32\u0e13\u0e31\u0e10",
     "thai_last_name": "\u0e2d\u0e34\u0e19\u0e17\u0e23\u0e28\u0e34\u0e25\u0e1b\u0e4c"
   },
@@ -161,6 +181,8 @@
     "like": ["Light Blue color", "Squid"],
     "nickname": "Nink",
     "province": "Samut Sakorn",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/10/s/20181123093355cfpu38.png",
     "thai_first_name": "\u0e21\u0e19\u0e31\u0e0d\u0e0d\u0e32",
     "thai_last_name": "\u0e40\u0e01\u0e32\u0e30\u0e08\u0e39"
   },
@@ -176,6 +198,8 @@
     "like": ["Pink color", "Japanese Food"],
     "nickname": "Maysa",
     "province": "Bangkok",
+    "profile_image": "",
+    "generation": "1",
     "thai_first_name": "\u0e40\u0e21\u0e29\u0e32",
     "thai_last_name": "\u0e08\u0e35\u0e19\u0e30\u0e27\u0e34\u0e08\u0e32\u0e23\u0e13\u0e30"
   },
@@ -191,6 +215,8 @@
     "like": ["Pink color", "Chicken Rice"],
     "nickname": "Nam-Neung",
     "province": "Singburi",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/12/s/20181123093240ioxy14.png",
     "thai_first_name": "\u0e21\u0e34\u0e25\u0e34\u0e19",
     "thai_last_name": "\u0e14\u0e2d\u0e01\u0e40\u0e17\u0e35\u0e22\u0e19"
   },
@@ -206,6 +232,8 @@
     "like": ["Black color", "Rice Cracker"],
     "nickname": "Miori",
     "province": "Ibaraki, Japan",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/15/s/20181123093136abez56.png",
     "thai_first_name": "\u0e21\u0e34\u0e42\u0e2d\u0e23\u0e34",
     "thai_last_name": "\u0e42\u0e2d\u0e04\u0e38\u0e42\u0e1a\u0e30"
   },
@@ -221,6 +249,8 @@
     "like": ["Light Blue color", "Tom Yum Goong"],
     "nickname": "Jaa",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/23/s/20181123092921bfjp46.png",
     "thai_first_name": "\u0e13\u0e1b\u0e20\u0e31\u0e0a",
     "thai_last_name": "\u0e27\u0e23\u0e1e\u0e24\u0e17\u0e18\u0e32\u0e19\u0e19\u0e17\u0e4c"
   },
@@ -236,6 +266,8 @@
     "like": ["Aqua Blue color", "Coconut Water"],
     "nickname": "Kaew",
     "province": "Chonburi",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/21/s/20181123092956ikpt69.png",
     "thai_first_name": "\u0e13\u0e31\u0e10\u0e23\u0e38\u0e08\u0e32",
     "thai_last_name": "\u0e0a\u0e38\u0e15\u0e34\u0e27\u0e23\u0e23\u0e13\u0e42\u0e2a\u0e20\u0e13"
   },
@@ -251,6 +283,8 @@
     "like": ["Red color", "Salmon"],
     "nickname": "Can",
     "province": "Bangkok",
+    "profile_image": "",
+    "generation": "1",
     "thai_first_name": "\u0e19\u0e32\u0e22\u0e34\u0e01\u0e32",
     "thai_last_name": "\u0e28\u0e23\u0e35\u0e40\u0e19\u0e35\u0e22\u0e19"
   },
@@ -266,6 +300,8 @@
     "like": ["Red color", "Chocolate"],
     "nickname": "Mild",
     "province": "Nakhon Ratchasima",
+    "profile_image": "",
+    "generation": "1",
     "thai_first_name": "\u0e1b\u0e13\u0e34\u0e28\u0e32",
     "thai_last_name": "\u0e28\u0e23\u0e35\u0e25\u0e30\u0e40\u0e25\u0e34\u0e07"
   },
@@ -281,6 +317,8 @@
     "like": ["Light Blue color", "Chocolate"],
     "nickname": "Orn",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/3/s/20181123093629ghtuv5.png",
     "thai_first_name": "\u0e1e\u0e31\u0e28\u0e0a\u0e19\u0e31\u0e19\u0e17\u0e4c",
     "thai_last_name": "\u0e40\u0e08\u0e35\u0e22\u0e08\u0e34\u0e23\u0e42\u0e0a\u0e15\u0e34"
   },
@@ -296,6 +334,8 @@
     "like": ["Light Blue color", "Sashimi"],
     "nickname": "Namsai",
     "province": "Chiang Mai",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/11/s/20181123093259mqst29.png",
     "thai_first_name": "\u0e1e\u0e34\u0e0a\u0e0d\u0e32\u0e20\u0e32",
     "thai_last_name": "\u0e19\u0e32\u0e16\u0e32"
   },
@@ -311,6 +351,8 @@
     "like": ["Pink color", "Strawberry"],
     "nickname": "Mobile",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/14/s/20181123093154bcsuv9.png",
     "thai_first_name": "\u0e1e\u0e34\u0e21\u0e23\u0e20\u0e31\u0e2a",
     "thai_last_name": "\u0e1c\u0e14\u0e38\u0e07\u0e27\u0e31\u0e12\u0e19\u0e30\u0e42\u0e0a\u0e04"
   },
@@ -326,6 +368,8 @@
     "like": ["Complementary color", "Biscuit Stick"],
     "nickname": "Music",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/13/s/20181123093213adej67.png",
     "thai_first_name": "\u0e41\u0e1e\u0e23\u0e27\u0e32",
     "thai_last_name": "\u0e2a\u0e38\u0e18\u0e23\u0e23\u0e21\u0e1e\u0e07\u0e29\u0e4c"
   },
@@ -341,6 +385,8 @@
     "like": ["Black color", "Jelly"],
     "nickname": "Pun",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/1/s/20181123093714fgmz14.png",
     "thai_first_name": "\u0e1b\u0e31\u0e0d\u0e2a\u0e34\u0e01\u0e23\u0e13\u0e4c",
     "thai_last_name": "\u0e15\u0e34\u0e22\u0e30\u0e01\u0e23"
   },
@@ -356,6 +402,8 @@
     "like": ["White color", "Marshmallow"],
     "nickname": "Piam",
     "province": "Saraburi",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/8/s/20181123093439aimos2.png",
     "thai_first_name": "\u0e23\u0e34\u0e19\u0e23\u0e14\u0e32",
     "thai_last_name": "\u0e2d\u0e34\u0e19\u0e17\u0e23\u0e4c\u0e44\u0e18\u0e2a\u0e07"
   },
@@ -371,6 +419,8 @@
     "like": ["Pink color", "Plum"],
     "nickname": "Satchan",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/6/s/20181123093532acdrs6.png",
     "thai_first_name": "\u0e2a\u0e27\u0e34\u0e0a\u0e0d\u0e32",
     "thai_last_name": "\u0e02\u0e08\u0e23\u0e23\u0e38\u0e48\u0e07\u0e28\u0e34\u0e25\u0e1b\u0e4c"
   },
@@ -386,6 +436,8 @@
     "like": ["Light Blue color", "Cheese"],
     "nickname": "Jib",
     "province": "Lopburi",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/22/s/20181123092940adjpx7.png",
     "thai_first_name": "\u0e2a\u0e38\u0e0a\u0e0d\u0e32",
     "thai_last_name": "\u0e41\u0e2a\u0e19\u0e42\u0e04\u0e15"
   },
@@ -401,6 +453,8 @@
     "like": ["White color", "Cheese"],
     "nickname": "Korn",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/18/s/20181123093052ckr368.png",
     "thai_first_name": "\u0e27\u0e11\u0e39\u0e28\u0e34\u0e23\u0e34",
     "thai_last_name": "\u0e20\u0e39\u0e27\u0e1b\u0e31\u0e0d\u0e0d\u0e32\u0e2a\u0e34\u0e23\u0e34"
   },
@@ -416,6 +470,8 @@
     "like": ["Green color", "Ice Cream"],
     "nickname": "Kaimook",
     "province": "Bangkok",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/18/s/20181123093052ckr368.png",
     "thai_first_name": "\u0e27\u0e23\u0e31\u0e17\u0e22\u0e32",
     "thai_last_name": "\u0e14\u0e35\u0e2a\u0e21\u0e40\u0e25\u0e34\u0e28"
   },
@@ -431,6 +487,8 @@
     "like": ["Red color", "Spicy Food"],
     "nickname": "Kidcat",
     "province": "Bangkok",
+    "profile_image": "",
+    "generation": "1",
     "thai_first_name": "\u0e27\u0e23\u0e23\u0e29\u0e21\u0e13\u0e11\u0e4c",
     "thai_last_name": "\u0e1e\u0e07\u0e29\u0e4c\u0e27\u0e32\u0e19\u0e34\u0e0a"
   },
@@ -446,6 +504,8 @@
     "like": ["Clothes", "Fruits"],
     "nickname": "Izurina",
     "province": "Saitama, Japan",
+    "generation": "1",
+    "profile_image": "https://www.bnk48.com/data/Members/25/s/20181123092844eikqx9.png",
     "thai_first_name": "\u0e23\u0e34\u0e19\u0e30",
     "thai_last_name": "\u0e2d\u0e34\u0e0b\u0e36\u0e15\u0e30"
   }
