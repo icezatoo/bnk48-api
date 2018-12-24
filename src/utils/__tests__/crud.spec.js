@@ -43,7 +43,7 @@ describe('crud controllers', () => {
       await getById(Member)(req, res)
     })
 
-    test('404 if no doc was found', async () => {
+    test('400 if no doc was found', async () => {
       expect.assertions(2)
 
       const req = {
@@ -142,69 +142,31 @@ describe('crud controllers', () => {
   })
 
   describe('updateOne', async () => {
-    // test('finds doc  id to update ', async () => {
-    //   expect.assertions(3)
+    test('finds doc  id to update ', async () => {
+      expect.assertions(3)
 
-    //   const member = mongoose.Types.ObjectId()
-
-    //   const list = await Member.create({
-    //     birthday: '2018-01-01',
-    //     blood_type: 'B',
-    //     english_first_name: 'Test',
-    //     english_last_name: 'test',
-    //     facebook: '',
-    //     height: 0,
-    //     hobby: '',
-    //     instagram: '',
-    //     like: [],
-    //     nickname: '',
-    //     province: '',
-    //     thai_first_name: '',
-    //     thai_last_name: '',
-    //     createdBy: member
-    //   })
-
-    //   const update = {
-    //     birthday: '2018-01-01',
-    //     blood_type: 'C',
-    //     english_last_name: 'last_name',
-    //     facebook: '',
-    //     height: 0,
-    //     hobby: '',
-    //     instagram: '',
-    //     like: [],
-    //     nickname: 'test2',
-    //     province: '',
-    //     thai_first_name: '',
-    //     thai_last_name: '',
-    //     createdBy: member
-    //   }
-
-    //   const req = {
-    //     params: { id: list._id },
-    //     body: update
-    //   }
-
-    //   const res = {
-    //     status(status) {
-    //       expect(status).toBe(200)
-    //       return this
-    //     },
-    //     json(result) {
-    //       expect(result.data._id).toBe(list._id)
-    //       expect(result.data.nickname).toBe(update.nickname)
-    //     }
-    //   }
-    //   await updateOne(Member)(req, res)
-    // })
-
-    test('400 if no doc', async () => {
       const member = mongoose.Types.ObjectId()
 
-      const body = {
+      const list = await Member.create({
+        birthday: '2018-01-01',
+        blood_type: 'B',
+        english_first_name: 'Test',
+        english_last_name: 'test',
+        facebook: '',
+        height: 0,
+        hobby: '',
+        instagram: '',
+        like: [],
+        nickname: '',
+        province: '',
+        thai_first_name: '',
+        thai_last_name: '',
+        createdBy: member
+      })
+
+      const update = {
         birthday: '2018-01-01',
         blood_type: 'C',
-        english_first_name: 'TestFirstName',
         english_last_name: 'last_name',
         facebook: '',
         height: 0,
@@ -219,20 +181,59 @@ describe('crud controllers', () => {
       }
 
       const req = {
-        params: { id: mongoose.Types.ObjectId() },
-        body: body
+        params: { id: list._id },
+        body: update
       }
 
       const res = {
         status(status) {
-          expect(status).toBe(400)
+          expect(status).toBe(200)
           return this
         },
-        end() {
-          expect(true).toBe(true)
+        json(result) {
+          expect(result.data._id).toBe(list._id)
+          expect(result.data.nickname).toBe(update.nickname)
         }
       }
       await updateOne(Member)(req, res)
     })
+
+    // test('400 if no doc', async () => {
+    //   expect.assertions(2)
+    //   const member = mongoose.Types.ObjectId()
+
+    //   const body = {
+    //     birthday: '2018-01-01',
+    //     blood_type: 'C',
+    //     english_first_name: 'TestFirstName',
+    //     english_last_name: 'last_name',
+    //     facebook: '',
+    //     height: 0,
+    //     hobby: '',
+    //     instagram: '',
+    //     like: [],
+    //     nickname: 'test2',
+    //     province: '',
+    //     thai_first_name: '',
+    //     thai_last_name: '',
+    //     createdBy: member
+    //   }
+
+    //   const req = {
+    //     params: { id: mongoose.Types.ObjectId() },
+    //     body: body
+    //   }
+
+    //   const res = {
+    //     status(status) {
+    //       expect(status).toBe(400)
+    //       return this
+    //     },
+    //     end() {
+    //       expect(true).toBe(true)
+    //     }
+    //   }
+    //   await updateOne(Member)(req, res)
+    // })
   })
 })

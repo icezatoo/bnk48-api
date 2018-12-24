@@ -7,11 +7,9 @@ export const getFindPage = model => async (req, res) => {
     const { pagination } = config
     const page = parseInt(req.query.page) || pagination.page
     const limit = parseInt(req.query.limit) || pagination.limit
-    const query = req.query.q || {}
 
     const doc = await model
-      .find()
-      .or([{ nickname: query }, { english_first_name: query }])
+      .find({})
       .sort({ update_at: -1 })
       .skip((page - 1) * limit)
       .limit(limit)
@@ -33,9 +31,54 @@ export const getFindPage = model => async (req, res) => {
     })
   } catch (e) {
     console.error(e)
-    // res.status(500).send('There was a problem finding the Member.')
-    res.status(400).end()
+    res
+      .status(500)
+      .json({ code: 500, message: 'There was a problem finding the Member.' })
+    // res.status(400).end()
   }
 }
 
-export default { ...crudControllers(Member), getFindPage: getFindPage(Member) }
+export const getFindMember = model => async (req, res) => {
+  try {
+    const query = req.query.q
+    let doc = []
+
+    if (query) {
+      doc = await model
+        .find()
+        .or([
+          { nickname: query.toUpperCase() },
+          { english_first_name: query.toUpperCase() }
+        ])
+        .lean()
+        .exec()
+    } else {
+      doc = await model
+        .find()
+        .lean()
+        .exec()
+    }
+
+    if (!doc) {
+      return res.status(400).end()
+    }
+
+    res.status(200).json({
+      data: doc
+    })
+  } catch (e) {
+    console.error(e)
+    res
+      .status(500)
+      .json({ code: 500, message: 'There was a problem finding the Member.' })
+    // res.status(400).end()
+  }
+}
+
+export const memberControllers = {
+  ...crudControllers(Member),
+  getFindPage: getFindPage(Member),
+  getFindMember: getFindMember(Member)
+}
+
+export default { ...memberControllers }
