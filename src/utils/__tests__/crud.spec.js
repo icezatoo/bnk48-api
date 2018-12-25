@@ -1,4 +1,4 @@
-import { getById, getMany, createOne, updateOne } from '../crud'
+import { getById, getMany, createOne, updateOne, removeOne } from '../crud'
 import { Member } from '../../resources/member/member.model'
 import mongoose from 'mongoose'
 
@@ -191,49 +191,108 @@ describe('crud controllers', () => {
           return this
         },
         json(result) {
-          expect(result.data._id).toBe(list._id)
+          expect(`${result.data._id}`).toBe(`${list._id}`)
           expect(result.data.nickname).toBe(update.nickname)
         }
       }
       await updateOne(Member)(req, res)
     })
 
-    // test('400 if no doc', async () => {
-    //   expect.assertions(2)
-    //   const member = mongoose.Types.ObjectId()
+    test('400 if no doc', async () => {
+      expect.assertions(2)
+      const member = mongoose.Types.ObjectId()
 
-    //   const body = {
-    //     birthday: '2018-01-01',
-    //     blood_type: 'C',
-    //     english_first_name: 'TestFirstName',
-    //     english_last_name: 'last_name',
-    //     facebook: '',
-    //     height: 0,
-    //     hobby: '',
-    //     instagram: '',
-    //     like: [],
-    //     nickname: 'test2',
-    //     province: '',
-    //     thai_first_name: '',
-    //     thai_last_name: '',
-    //     createdBy: member
-    //   }
+      const body = {
+        birthday: '2018-01-01',
+        blood_type: 'C',
+        english_first_name: 'TestFirstName',
+        english_last_name: 'last_name',
+        facebook: '',
+        height: 0,
+        hobby: '',
+        instagram: '',
+        like: [],
+        nickname: 'test2',
+        province: '',
+        thai_first_name: '',
+        thai_last_name: '',
+        createdBy: member
+      }
 
-    //   const req = {
-    //     params: { id: mongoose.Types.ObjectId() },
-    //     body: body
-    //   }
+      const req = {
+        params: { id: mongoose.Types.ObjectId() },
+        body: body
+      }
 
-    //   const res = {
-    //     status(status) {
-    //       expect(status).toBe(400)
-    //       return this
-    //     },
-    //     end() {
-    //       expect(true).toBe(true)
-    //     }
-    //   }
-    //   await updateOne(Member)(req, res)
-    // })
+      const res = {
+        status(status) {
+          expect(status).toBe(400)
+          return this
+        },
+        end() {
+          expect(true).toBe(true)
+        }
+      }
+      await updateOne(Member)(req, res)
+    })
+  })
+
+  describe('removeOne', async () => {
+    test('finds doc id to remove ', async () => {
+      expect.assertions(2)
+
+      const member = mongoose.Types.ObjectId()
+
+      const list = await Member.create({
+        birthday: '2018-01-01',
+        blood_type: 'C',
+        english_first_name: 'Test2',
+        english_last_name: 'test2',
+        facebook: '',
+        height: 0,
+        hobby: '',
+        instagram: '',
+        like: [],
+        nickname: '',
+        province: '',
+        thai_first_name: '',
+        thai_last_name: '',
+        createdBy: member
+      })
+
+      const req = {
+        params: { id: list._id }
+      }
+
+      const res = {
+        status(status) {
+          expect(status).toBe(200)
+          return this
+        },
+        json(result) {
+          expect(`${result.data._id}`).toBe(`${list._id}`)
+        }
+      }
+      await removeOne(Member)(req, res)
+    })
+
+    test('400 if not  doc  ', async () => {
+      expect.assertions(2)
+
+      const req = {
+        params: { id: mongoose.Types.ObjectId() }
+      }
+
+      const res = {
+        status(status) {
+          expect(status).toBe(400)
+          return this
+        },
+        end() {
+          expect(true).toBe(true)
+        }
+      }
+      await removeOne(Member)(req, res)
+    })
   })
 })
