@@ -266,7 +266,7 @@ describe('crud controllers', () => {
 
       const res = {
         status(status) {
-          expect(status).toBe(200)
+          expect(status).toBe(201)
           return this
         },
         json(result) {

@@ -5,7 +5,7 @@ import cors from 'cors'
 import config from './config'
 import { connect } from './utils/db'
 import memberRouter from './resources/member/member.router'
-
+import expressValidator from 'express-validator'
 export const app = express()
 
 app.disable('x-powered-by')
@@ -14,6 +14,7 @@ app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
+app.use(expressValidator())
 
 app.use('/api/member', memberRouter)
 

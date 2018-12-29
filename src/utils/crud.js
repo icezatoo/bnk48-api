@@ -13,7 +13,6 @@ export const getById = model => async (req, res) => {
   } catch (e) {
     console.error(e)
     res.status(400).end()
-    // res.status(500).send('There was a problem finding the user.')
   }
 }
 
@@ -79,7 +78,7 @@ export const removeOne = model => async (req, res) => {
       return res.status(400).end()
     }
 
-    return res.status(200).json({ data: removed })
+    return res.status(201).json({ data: removed })
   } catch (e) {
     console.error(e)
     res.status(400).end()

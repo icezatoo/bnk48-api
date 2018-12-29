@@ -34,7 +34,6 @@ export const getFindPage = model => async (req, res) => {
     res
       .status(500)
       .json({ code: 500, message: 'There was a problem finding the Member.' })
-    // res.status(400).end()
   }
 }
 
@@ -71,14 +70,12 @@ export const getFindMember = model => async (req, res) => {
     res
       .status(500)
       .json({ code: 500, message: 'There was a problem finding the Member.' })
-    // res.status(400).end()
   }
 }
 
-export const memberControllers = {
-  ...crudControllers(Member),
-  getFindPage: getFindPage(Member),
-  getFindMember: getFindMember(Member)
-}
+export const memberControllers = model => ({
+  getFindPage: getFindPage(model),
+  getFindMember: getFindMember(model)
+})
 
-export default { ...memberControllers }
+export default { ...crudControllers(Member), ...memberControllers(Member) }

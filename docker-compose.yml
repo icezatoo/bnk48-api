@@ -4,17 +4,23 @@ services:
     image: 'mongo'
     ports:
       - '27017:27017'
-  mongodb_test:
-    image: 'mongo'
-    ports:
-      - '27018:27017'
+    restart: always
   mongo-seed:
     build: ./mongo-seed
     links:
       - mongodb
+    depends_on:
+      - mongodb
+  mongodb_test:
+    image: 'mongo'
+    ports:
+      - '27018:27017'
+    restart: always
   mongo-seed-test:
     build: ./mongo-seed
     links:
+      - mongodb_test
+    depends_on:
       - mongodb_test
     environment:
       - HOST_DB="mongodb_test"
