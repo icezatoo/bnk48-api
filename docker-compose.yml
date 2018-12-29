@@ -1,7 +1,7 @@
 version: '3'
 services:
   mongodb:
-    image: 'mongo'
+    image: 'mongo:4.1'
     ports:
       - '27017:27017'
     restart: always
@@ -12,7 +12,7 @@ services:
     depends_on:
       - mongodb
   mongodb_test:
-    image: 'mongo'
+    image: 'mongo:4.1'
     ports:
       - '27018:27017'
     restart: always
