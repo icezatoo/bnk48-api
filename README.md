@@ -13,7 +13,6 @@ make start
 ### `Run is Project`
 
 ```
-make start
 make run
 ```
 
